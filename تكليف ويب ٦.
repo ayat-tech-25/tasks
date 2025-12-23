@@ -1,0 +1,22 @@
+<?php
+
+date_default_timezone_set("Asia/Aden");
+
+echo "<h3>Date & Time</h3>";
+echo "Today is: " . date("Y-m-d") . "<br>";
+echo "Time is: " . date("h:i:s A") . "<br><hr>";
+
+
+$timestamp = time();
+echo "<h3> Timestamp </h3>";
+echo "Timestamp: " . $timestamp . "<br><hr>";
+
+
+echo "<h3>Converted Timestamp</h3>";
+echo "Date & Time: " . date("Y-m-d   h:i:s A", $timestamp) . "<br><hr>";
+
+echo "<h3>Today & Tomorrow</h3>";
+echo "Today: " . date("Y-m-d") . "<br>";
+echo "Tomorrow: " . date("Y-m-d", strtotime("+1 day"));
+echo "<hr>";
+?>
